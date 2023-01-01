@@ -8,7 +8,8 @@ README.md file created 12/31/2022
 Changed Project Title to Anthony's BikeShare.
 
 ### Description
-Describe what your project is about and what it does
+Anthony's BikeShare Project performs presents statistical analysis information on BikeShare data for 
+the Cities of Chicago, New York, and Washington 
 
 ### Files used
 Include the files used
