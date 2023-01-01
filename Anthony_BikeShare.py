@@ -34,7 +34,7 @@ def get_filters():
                 break    
 
         except Exception as e:
-            """ Debugging print('\nError: {}'.format(e))"""
+           
             print('{}, is not a valid entry.'.format(city))
             print('-'*40)
             main()
@@ -50,7 +50,7 @@ def get_filters():
                 break
 
         except Exception as e:
-             """ Debugging print('\nError: {}'.format(e))"""
+             
              print('{}, is not a valid entry.'.format(month))
              print('-'*40)
              main()
@@ -66,7 +66,7 @@ def get_filters():
                 break
         
         except Exception as e:
-            """ Debugging print('\nError: {}'.format(e))"""
+            
             print('{}, is not a valid entry.'.format(day))
             print('-'*40)
             main()
@@ -109,11 +109,6 @@ def load_data(city, month, day):
         df['day_name'] = df['Start Time'].dt.day_name()
         df = df[df['day_name'] == day.title()] 
         
-        """ Filter Debug Statements """
-        """ print('Current Day:',day)
-            print('Current Month:',month)
-            print('filtered ', df)
-        """
     return df
 
 
@@ -267,6 +262,9 @@ def Display_Trip_Detail(df):
 
 
 def main():
+    
+    """ Main function to return Bikeshare Stats."""
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
