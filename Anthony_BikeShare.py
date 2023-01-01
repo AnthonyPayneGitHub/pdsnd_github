@@ -267,6 +267,9 @@ def Display_Trip_Detail(df):
 
 
 def main():
+    
+    """ Main function to return Bikeshare Stats."""
+
     while True:
         city, month, day = get_filters()
         df = load_data(city, month, day)
